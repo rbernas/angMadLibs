@@ -52,3 +52,13 @@ h1 {
 	padding-left: 100px;
 	padding-bottom: 100px;
 }
+
+.text_output_visible {
+	opacity: 1;
+}
+
+.text_output_ {
+	opacity: 0;
+	position: absolute;
+	transition: all 1s;
+}

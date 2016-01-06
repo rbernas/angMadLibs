@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="textInput">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script data-require="angular.js@1.3.10" data-semver="1.3.10" src="https://code.angularjs.org/1.3.10/angular.js"></script>
+		<script>
+			var app = angular.module('textInput', [])
+					app.controller('inputController', ['$scope', function ($scope) {
+						$scope.example = {
+							text: 'guest'
+						};
+					}]);
+		</script>
+	</head>
+	
+	<body>
+		<div ng-controller="inputController">
+		<img class="happyFace" src="images/mad-lib-happy-face.png">
+		<div class="img_with_text">
+			<img class="ngLogo" src="images/ng-mad-libs-logo.png">
+			<h1>Automate This!</h1>
+		</div>
+		<div class="middle">
+			<h2>Provide the following words:</h2>
+			<table>
+				<tr>
+					<td>female</td>
+					<td><input type="text" ng-model="female" placeholder="female" style="color:blue"></td>
+					<td>job</td>
+					<td><input type="text" ng-model="job" placeholder="job title" style="color:red"></td>
+					<td>tedious task</td>
+					<td><input type="text" ng-model="tedious_task" placeholder="tedious task" style="color:orange"></td>
+				</tr>
+				<tr>
+					<td>dirty task</td>
+					<td><input type="text" ng-model="dirty_task" placeholder="dirty task" style="color:brown"></td>
+					<td>celebrity</td>
+					<td><input type="text" ng-model="celebrity" placeholder="celebrity" style="color:green"></td>
+					<td>skill</td>
+					<td><input type="text" ng-model="skill" placeholder="skill" style="color:purple"></td>
+				</tr>
+				<tr>
+					<td>number</td>
+					<td><input type="text" ng-model="number" placeholder="number" style="color:yellow"></td>
+					<td>obnoxious</td>
+					<td><input type="text" ng-model="obnoxious" placeholder="obnoxious" style="color:pink"></td>
+					<td>adjective</td>
+					<td><input type="text" ng-model="adjective" placeholder="adjective" style="color:grey"></td>
+				</tr>
+				
+			</table>
+		</div>
+		<div class="main">
+			<p><span style="color:blue">{ {{ female }} }</span> was a <span style="color:red">{ {{job}} }</span> who loved technology. <br> Although she loved parts of her job, she absolutely hated <br><span style="color:orange">{ {{tedious_task}} }</span> and <span style="color:brown">{ {{dirty_task}} }</span>. So, <span style="color:blue">{ {{female}} }</span> <br> met with her life mentor <span style="color:orange">{ {{celebrity}} }</span> who told her to <br> learn <span style="color:purple">{ {{skill}} }</span> with Thinkful. Thinkful <br> didn't offer a course on <span style="color:purple">{ {{skill}} }</span> so she studied <br> programming instead.<br><br> What a great decision! With her new skills, <span style="color:blue">{ {{female}} }</span> <br> built a(n) <span style="color:grey">{ {{adjective}} }</span> robot named <br><span style="color:pink">{ {{obnoxious}} }</span> that not only loved <span style="color:orange">{ {{ dirty_task }} }</span> <br>but did it <span style="color:yellow">{ {{ number}} }</span> times faster.</p>
+		</div>
+	</div>
+	</body>
+</html>

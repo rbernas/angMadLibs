@@ -30,10 +30,12 @@ h1 {
 	top: -400px;
 }
 
-.middle {
+.input {
 	position: relative;
 	top: -371px;
 	left: -8px;
+	width: 1200px;
+	height: 600px;
 	border-style: solid;
 	margin-right: -464px;
 	padding-left: 225px;
@@ -41,14 +43,57 @@ h1 {
 	padding-bottom: 100px;
 }
 
-.main p {
+.text_output_visible {
 	position: relative;
-	font-family: "Times New Roman";
-	font-size: 35px;
-	top: -409px;
-	left: -8px;
-	margin-right: -464px;
-	border-style: solid;
-	padding-left: 100px;
-	padding-bottom: 100px;
+	opacity: 1;
+	left: 500px;
+	bottom: 250px;
+	width: 700px;
+	height: 500px;
+}
+
+.text_output_ {
+	opacity: 0;
+	position: absolute;
+	transition: all 1s;
+}
+
+.reloadButton {
+	position: absolute;
+	right: 0;
+}
+.blue {
+	color: blue;
+}
+
+.red {
+	color: red;
+}
+
+.grey {
+	color: grey;
+}
+
+.pink {
+	color: pink;
+}
+
+.orange {
+	color: orange;
+}
+
+.brown {
+	color: brown;
+}
+
+.yellow {
+	color: #EE82EE;
+}
+
+.purple {
+	color: purple;
+}
+
+.green {
+	color: green;
 }
